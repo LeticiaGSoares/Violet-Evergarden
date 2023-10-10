@@ -1,0 +1,94 @@
+:root{
+    --fonte-clara: rgb(255, 255, 250);
+    --fonte-escura: rgb(47, 65, 54);
+    --destaque: green;
+    --sub-destaque: lightgreen;
+    --claro: lightblue;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--claro);
+    background-image: linear-gradient(45deg, rgb(118, 249, 153) 0%, rgb(36, 115, 207) 100%);
+    font-family: 'Merriweather', serif;
+}
+
+h2{
+    color:var(--destaque);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.btn_destaque{
+    font-size: medium;
+    padding: 10px 8px;
+    border-radius: 8px;
+    background-color: var(--destaque);
+    color:whitesmoke;
+    cursor: pointer;
+}
+
+.btn_destaque:active{
+    background-color: var(--sub-destaque);
+    color: var(--destaque)
+}
+
+.btn_normal{
+    cursor: pointer;
+    font-size: medium;
+    padding: 10px 8px;
+    border-radius: 20px;
+    box-shadow: 2px var(--sub-destaque);
+}
+
+a{
+    color: whitesmoke;
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(rgba(47, 45, 51, 0.5), transparent);
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed; 
+    top: 0; 
+    left: 0;
+}
+
+ul{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav-link{
+    font-size: 20px;
+    font-weight: thin;
+}
+
+.ch-icon{
+    width:75px;
+    height:60px;
+}
+
+.sinopse,
+.personagens,
+.cartas,
+.assista{
+    height: 100vh;
+}
+

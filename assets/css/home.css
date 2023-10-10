@@ -1,0 +1,41 @@
+@import url(./shared.css);
+
+main{
+    margin-top: 100px;
+    width: 100vw;
+    height: 100vh;
+    display: inline-block;
+    position: relative;
+}
+
+main img{
+    max-width: 100%;
+    min-height: 100%;
+    margin-top: -100px;
+    object-fit: cover;
+    z-index: 0;
+    position: absolute;
+    -webkit-mask-image: linear-gradient(to top, transparent 5%, black 60%);
+}
+
+.main-text{
+    top: 40%;
+    left: 40px;
+    position:absolute;
+    height: 40%;
+    width: 40%;
+    border-radius: 20px;
+    padding: 20px 20px;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), transparent);
+    backdrop-filter: blur(5px);
+}
+
+.main-text>h1{
+    font-size: 55px;
+    color: var(--destaque);
+}
+
+.main-text>p{
+    color: var(--fonte-escura);
+    font-weight: normal;
+}
