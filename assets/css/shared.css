@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+@import url(./home.css);
+
 :root{
     --fonte-clara: rgb(255, 255, 250);
     --fonte-escura: rgb(47, 65, 54);
     --destaque: green;
+    --destaque-hover: rgb(1, 110, 1);
     --sub-destaque: lightgreen;
     --claro: lightblue;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
 
 *{
     margin: 0;
@@ -14,40 +16,12 @@
     list-style: none;
     border-style: none;
     text-decoration: none;
+    font-family: 'Merriweather', serif;
 }
 
 body{
     background-color: var(--claro);
     background-image: linear-gradient(45deg, rgb(118, 249, 153) 0%, rgb(36, 115, 207) 100%);
-    font-family: 'Merriweather', serif;
-}
-
-h2{
-    color:var(--destaque);
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.btn_destaque{
-    font-size: medium;
-    padding: 10px 8px;
-    border-radius: 8px;
-    background-color: var(--destaque);
-    color:whitesmoke;
-    cursor: pointer;
-}
-
-.btn_destaque:active{
-    background-color: var(--sub-destaque);
-    color: var(--destaque)
-}
-
-.btn_normal{
-    cursor: pointer;
-    font-size: medium;
-    padding: 10px 8px;
-    border-radius: 20px;
-    box-shadow: 2px var(--sub-destaque);
 }
 
 a{
@@ -76,19 +50,84 @@ ul{
 }
 
 .nav-link{
-    font-size: 20px;
+    transition: .2s;
+    font-size: 15px;
     font-weight: thin;
 }
 
+.nav-link:hover{
+    text-decoration: double;
+    font-size:20px;
+}
+
 .ch-icon{
+    transition: .2s;
     width:75px;
     height:60px;
 }
 
-.sinopse,
-.personagens,
-.cartas,
-.assista{
-    height: 100vh;
+.ch-icon:hover{
+    width:65px;
+    height:50px;
 }
+
+h1{
+    font-size: xx-large;
+}
+
+h2{
+    color:var(--destaque);
+    font-size: medium;
+    font-weight: bold;
+}
+
+p{
+    font-size:small;
+}
+
+.btn_destaque{
+    transition: .2s;
+    font-size: medium;
+    padding: 10px 8px;
+    border-radius: 8px;
+    background-color: var(--destaque);
+    color:whitesmoke;
+    cursor: pointer;
+    margin-right: 10px;
+    border-style: groove;
+    border-color: var(--sub-destaque);
+}
+
+.btn_destaque:hover{
+    font-size:large;
+    background-color: var(--destaque-hover);
+}
+
+.btn_destaque:active{
+    background-color: var(--sub-destaque);
+    color: var(--destaque)
+}
+
+.btn_normal{
+    transition: .3s;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: medium;
+    padding: 10px 8px;
+    border-style: groove;
+    border-color: whitesmoke;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: var(--destaque);
+}
+
+.btn_normal:hover{
+    font-size:large;
+    background-color:  rgba(255, 255, 255, 0.5);
+}
+
+.btn_normal:active{
+    color: whitesmoke;
+}
+
 

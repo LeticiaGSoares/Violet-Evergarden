@@ -1,16 +1,16 @@
 @import url(./shared.css);
 
-main{
+.home{
     margin-top: 100px;
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     display: inline-block;
     position: relative;
 }
 
-main img{
-    max-width: 100%;
-    min-height: 100%;
+.home>img{
+    width: 100%;
+    height: 140%;
     margin-top: -100px;
     object-fit: cover;
     z-index: 0;
@@ -18,8 +18,8 @@ main img{
     -webkit-mask-image: linear-gradient(to top, transparent 5%, black 60%);
 }
 
-.main-text{
-    top: 40%;
+.home>.main-text{
+    top: 50%;
     left: 40px;
     position:absolute;
     height: 40%;
@@ -31,7 +31,6 @@ main img{
 }
 
 .main-text>h1{
-    font-size: 55px;
     color: var(--destaque);
 }
 

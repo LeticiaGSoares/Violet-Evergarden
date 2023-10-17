@@ -1,0 +1,10 @@
+.personagens>.title{
+    margin-left: 15px;
+}
+
+.personagens{
+    height: 100vh;
+    background: linear-gradient(rgba(210, 224, 255, 0.8), transparent);
+    backdrop-filter: blur(5px);
+}
+
