@@ -1,40 +1,51 @@
 @import url(./shared.css);
 
 .home{
-    margin-top: 100px;
-    width: 100vw;
-    height: 90vh;
-    display: inline-block;
-    position: relative;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.home>img{
-    width: 100%;
-    height: 140%;
-    margin-top: -100px;
-    object-fit: cover;
-    z-index: 0;
+.background-img{
+    min-width:120vw;
+    min-height: 100vh;
     position: absolute;
-    -webkit-mask-image: linear-gradient(to top, transparent 5%, black 60%);
+    left: -50px;
+    z-index: -1;
 }
 
-.home>.main-text{
-    top: 50%;
-    left: 40px;
+.black-fade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+    z-index: 0;
+}
+
+.home-content{
+    z-index: 1;
+    text-align: center;
+    color: var(--branco);
     position:absolute;
-    height: 40%;
-    width: 40%;
-    border-radius: 20px;
-    padding: 20px 20px;
-    background: linear-gradient(rgba(255, 255, 255, 0.8), transparent);
-    backdrop-filter: blur(5px);
+    bottom: 20%;
 }
 
-.main-text>h1{
-    color: var(--destaque);
+.home-content>h1{
+    font-size: 60px;
 }
 
-.main-text>p{
-    color: var(--fonte-escura);
-    font-weight: normal;
+.home-content>p{
+    margin-left: 20%;
+    width: 60%;
+}
+
+
+@media (max-width: 686px){
+    .background-img{
+        position: absolute;
+        left: -40vw;
+    }
 }
