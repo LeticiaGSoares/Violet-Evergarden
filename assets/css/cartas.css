@@ -1,0 +1,17 @@
+.cartas{
+    padding: 80px 0;
+    height: auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0, 0.7)), url(https://i.pinimg.com/originals/f3/a1/7c/f3a17c0fe4c7019cdca4177f93b661b2.gif);
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    color: var(--branco);
+}
+
+.cartas-text{
+    max-width: 60%;
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+}

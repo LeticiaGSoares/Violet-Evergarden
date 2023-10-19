@@ -1,0 +1,25 @@
+button{
+    padding: 10px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.btn-normal{
+    background-color: var(--btn-normal);
+    border: 1px solid var(--btn-destaque);
+    color: var(--branco)
+}
+
+.btn-normal:hover{
+    background-color: var(--btn-normal-hover);
+}
+
+.btn-destaque{
+    background-color: var(--btn-destaque);
+    color: var(--primaria);
+}
+
+.btn-destaque:hover{
+    background-color: var(--btn-destaque-hover);
+}

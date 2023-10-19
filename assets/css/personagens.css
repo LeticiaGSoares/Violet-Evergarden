@@ -1,10 +1,84 @@
-.personagens>.title{
-    margin-left: 15px;
-}
-
 .personagens{
-    height: 100vh;
-    background: linear-gradient(rgba(210, 224, 255, 0.8), transparent);
-    backdrop-filter: blur(5px);
+    height: auto;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)),url(https://images2.alphacoders.com/130/1309622.jpeg);
+    background-size: cover;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    color: var(--branco);
 }
 
+.personagens-card{
+    display:flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.personagens-text{
+    min-width: auto;
+    max-width: 30vw;
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.personagens-text>h1{
+    font-size: 45px;
+}
+
+
+.card:nth-child(1){
+    background-image: url(https://i.pinimg.com/originals/6a/1d/61/6a1d6145a724f70e825f1ed43f2579f2.jpg);
+}
+
+.card:nth-child(2){
+    background-image: url(https://th.bing.com/th/id/OIP.g0q3ekIMpbgQEi37K4ylZwAAAA?pid=ImgDet&rs=1);
+}
+
+.card:nth-child(3){
+    background-image: url(https://img.wattpad.com/2351e3ef89ca1c985fa9ecd9cbe8184df9c5afdd/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f314132494a6932477754773533673d3d2d313034323038383533352e3136366438663233643430336136663331373238313138373537312e6a7067?s=fit&w=720&h=720);
+}
+
+.card:nth-child(4){
+    background-image: url(https://th.bing.com/th/id/R.afbf18ed63716918808b0dede689cac9?rik=0bq4RZUtkW9leg&pid=ImgRaw&r=0);
+}
+
+.card:nth-child(5){
+    background-image: url(https://i.pinimg.com/originals/f6/70/53/f67053abf34da23cf3f76a89b615c62e.jpg);
+}
+
+.card:nth-child(6){
+    background-image: url(https://img.wattpad.com/4d3b39c3f0bb2335184d8e96ecc9be3dc2c65a7b/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f796e3533314d384e6f4e387043413d3d2d313034323038383533352e313636643866333539303831663331633138393139353236303734352e6a7067?s=fit&w=720&h=720);
+}
+
+.card{
+    width: 180px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-size: cover;
+}
+
+.card-title{
+    margin-top: 15px;
+    white-space: nowrap;
+}
+
+.personagens>.div-indication{
+    position: relative;
+}
+
+@media (max-width: 823px){
+    .personagens-content{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .personagens-text{
+        max-width: 70vw;
+    }
+}

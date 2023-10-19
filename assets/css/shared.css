@@ -1,13 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+@import url(./buttons.css);
 @import url(./home.css);
+@import url(./personagens.css);
+@import url(./cartas.css);
+@import url(./anime.css);
+@import url(./especiais.css);
+@import url(./assista.css);
+@import url(./footer.css);
 
 :root{
-    --fonte-clara: rgb(255, 255, 250);
-    --fonte-escura: rgb(47, 65, 54);
-    --destaque: green;
-    --destaque-hover: rgb(1, 110, 1);
-    --sub-destaque: lightgreen;
-    --claro: lightblue;
+    --primaria:rgb(27, 112, 78) ;
+    --branco: whitesmoke;
+    --btn-normal: rgba(189, 255, 219, 0.2);
+    --btn-normal-hover: rgba(189, 255, 219, 0.5);
+    --btn-destaque: whitesmoke;
+    --btn-destaque-hover: lightgrey;
+    --azul: rgba(39, 116, 198, 0.931);
 }
 
 *{
@@ -17,29 +25,19 @@
     border-style: none;
     text-decoration: none;
     font-family: 'Merriweather', serif;
+    scroll-behavior: smooth;
 }
 
-body{
-    background-color: var(--claro);
-    background-image: linear-gradient(45deg, rgb(118, 249, 153) 0%, rgb(36, 115, 207) 100%);
-}
-
-a{
-    color: whitesmoke;
-}
 
 nav{
-    width: 100%;
     height: 100px;
-    background: linear-gradient(rgba(47, 45, 51, 0.5), transparent);
-    backdrop-filter: blur(5px);
+    width: 100%;
+    background: linear-gradient(var(--azul), transparent);
     z-index: 1000;
     display: flex;
-    justify-content: center;
     align-items: center;
-    position: fixed; 
-    top: 0; 
-    left: 0;
+    position: fixed;
+    justify-content: center;
 }
 
 ul{
@@ -49,15 +47,13 @@ ul{
     gap: 50px;
 }
 
+nav a{
+    color: var(--branco);
+}
 .nav-link{
     transition: .2s;
     font-size: 15px;
     font-weight: thin;
-}
-
-.nav-link:hover{
-    text-decoration: double;
-    font-size:20px;
 }
 
 .ch-icon{
@@ -71,63 +67,14 @@ ul{
     height:50px;
 }
 
-h1{
-    font-size: xx-large;
-}
 
-h2{
-    color:var(--destaque);
-    font-size: medium;
+.div-indication{
+    writing-mode: vertical-lr;
+    white-space: nowrap;
     font-weight: bold;
+    color: var(--branco);
+    font-size: small;
+    letter-spacing: 0.3em;
+    padding-left: 27px;
+    margin-top: 10%;
 }
-
-p{
-    font-size:small;
-}
-
-.btn_destaque{
-    transition: .2s;
-    font-size: medium;
-    padding: 10px 8px;
-    border-radius: 8px;
-    background-color: var(--destaque);
-    color:whitesmoke;
-    cursor: pointer;
-    margin-right: 10px;
-    border-style: groove;
-    border-color: var(--sub-destaque);
-}
-
-.btn_destaque:hover{
-    font-size:large;
-    background-color: var(--destaque-hover);
-}
-
-.btn_destaque:active{
-    background-color: var(--sub-destaque);
-    color: var(--destaque)
-}
-
-.btn_normal{
-    transition: .3s;
-    margin-right: 10px;
-    cursor: pointer;
-    font-size: medium;
-    padding: 10px 8px;
-    border-style: groove;
-    border-color: whitesmoke;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.3);
-    color: var(--destaque);
-}
-
-.btn_normal:hover{
-    font-size:large;
-    background-color:  rgba(255, 255, 255, 0.5);
-}
-
-.btn_normal:active{
-    color: whitesmoke;
-}
-
-
