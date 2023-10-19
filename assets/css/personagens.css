@@ -10,6 +10,12 @@
     color: var(--branco);
 }
 
+.personagens-content{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
 .personagens-card{
     display:flex;
     gap: 50px;
@@ -73,9 +79,7 @@
 
 @media (max-width: 823px){
     .personagens-content{
-        display: flex;
         flex-direction: column;
-        gap: 30px;
     }
 
     .personagens-text{
