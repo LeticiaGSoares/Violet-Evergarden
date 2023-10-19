@@ -1,4 +1,45 @@
 .especiais{
-    height: 100vh;
-    background-color: rgb(86, 71, 255);
+    background-color: rgb(45, 44, 54);
+    padding: 80px 0;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-size: cover;
+    padding: 80px 0;
+    gap: 80px;
+    color: var(--branco);
+    
+}
+
+.especiais-card{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.cartaz-card:nth-child(1){
+    background-image: url(https://jovemnerd.com.br/wp-content/uploads/2019/04/violet-evergarden-filme-poser.jpg);
+}
+
+.cartaz-card:nth-child(2){
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTMxo_jXI-jyKYuCbX2xwG1kzMZp4OlF0WvQ&usqp=CAU);
+}
+
+.cartaz-card:nth-child(3){
+    background-image: url(https://animego.online/uploads/posts/2020-12/1607348637_poster.jpg);
+}
+
+.cartaz-card:nth-child(4){
+    background-image: url(https://br.web.img2.acsta.net/pictures/20/03/25/11/57/1582502.jpg);
+}
+
+.cartaz-card{
+    width: 280px;
+    height:400px;
+    background-size: cover;
+    display: inline-block;
+    border-radius: 10px;
+    box-sizing: border-box;
 }

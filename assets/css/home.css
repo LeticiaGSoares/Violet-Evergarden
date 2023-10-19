@@ -1,26 +1,19 @@
-@import url(./shared.css);
-
 .home{
     height: 100vh;
     display:flex;
     justify-content: center;
     align-items: center;
+    background-image: url(https://i.pinimg.com/originals/06/71/85/0671856687350e23a230f2b6536fc337.gif);
+    background-size: cover;
 }
 
-.background-img{
-    min-width:120vw;
-    min-height: 100vh;
-    position: absolute;
-    left: -50px;
-    z-index: -1;
-}
 
 .black-fade {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
     z-index: 0;
 }
